@@ -58,11 +58,11 @@ const HomePage: React.FC = () => {
     const navigate = useNavigate();
 
     const handlePENavigation = () => {
-        navigate('/fund');
+        navigate("https://sequoiastategies.co/fund");
     };
 
     const handleMedNavigation = () => {
-        alert("This button would link to the Medical Practices Landing Page.");
+        navigate("https://sequoiastategies.co/medical-practices");
     };
 
     return (
