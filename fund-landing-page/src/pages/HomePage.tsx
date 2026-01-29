@@ -1,4 +1,5 @@
 import React from 'react';
+import { redirect, useNavigate, useNavigate } from 'react-router-dom';
 import { ArrowRight, Building2, Stethoscope } from 'lucide-react';
 
 interface CardProps {
@@ -54,12 +55,14 @@ const Card: React.FC<CardProps> = ({ title, description, icon: Icon, buttonText,
 };
 
 const HomePage: React.FC = () => {
+    const navigate = useNavigate();
+
     const handlePENavigation = () => {
-        window.location.href = "https://sequoiastrategies.co/fund";
+        navigate("https://sequoiastrategies.co/fund");
     };
 
     const handleMedNavigation = () => {
-        window.location.href = "https://sequoiastrategies.co/medical-practices";
+        navigate("https://sequoiastrategies.co/medical-practices");
     };
 
     return (
